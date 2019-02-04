@@ -1,0 +1,949 @@
+/*------------------------------------------------------------------
+.______    __  ___   ___  __   _______  ___________    ____ 
+|   _  \  |  | \  \ /  / |  | |   ____||   ____\   \  /   / 
+|  |_)  | |  |  \  V  /  |  | |  |__   |  |__   \   \/   /  
+|   ___/  |  |   >   <   |  | |   __|  |   __|   \_    _/   
+|  |      |  |  /  .  \  |  | |  |____ |  |        |  |     
+| _|      |__| /__/ \__\ |__| |_______||__|        |__|     
+
+
+@charset "utf-8";
+
+[Main Stylesheet]
+
+Project:    The heart
+Version:    0.1
+Last change:    17-5-2017
+Primary use:    The Heart Wedding Template  
+
+
+================== Font Famil Used =================
+
+font-family: 'Roboto', sans-serif;
+
+
+[Typography]
+
+Body:               18px 'Roboto', sans-serif;
+Paragraph:          'Roboto', sans-serif;
+
+Section Title:      48px/1 'Great Vibes', cursive;
+Section Description:    14px/1 'Poppins', sans-serif;
+
+/*==============================
+[Table of contents]
+-------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------============================================================
+
+1. The Heart Typography 
+2. The Heart Main Menu
+3. The Heart Welcome Section
+4. The Heart Introduction Section 
+5. The Heart Memory
+6. The Heart Wedding Palace 
+7. The Heart Attending Content 
+8. The Heart Lovely Gallery
+9. The Heart jurnal 
+10. The Heart Footer
+11. The Heart magnific Pop Up Init
+12. The Heart Owl Carousel Custom
+
+
+
+	==================The Heart Inner Page Start==============
+1. The Heart Time Line Page 
+2. The Heart His Story
+3. The Heart Her Story
+4. The Heart Groomsman And Bride Maid
+5. The Heart Gift Registry
+6. The Heart Engagement Inner Page 
+7. The Heart Accommodation Inner Page 
+8. The Heart RSVP  
+9. The Heart Journal With Side Bar 
+10.The Heart Single Journal page 
+
+
+
+
+=============================================================--------------------------------------------------------------*/
+
+
+/*====================================================================== 
+		1. The Heart Typography 
+====================================================================================*/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.5;
+	color: #96327D;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
+	background-repeat: repeat;
+	background-position: center center;
+	background-size: 100%;
+}
+
+iframe{
+	border: none;
+}
+a, b, div, ul, li{
+	-webkit-tap-highlight-color: rgba(0,0,0,0); 
+	-webkit-tap-highlight-color: transparent; 
+	-moz-outline-: none;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+	color: red;
+}
+a:focus,
+a:active,
+input,
+input:hover,
+input:focus,
+input:active,
+textarea,
+textarea:hover,
+textarea:focus,
+textarea:active{
+-moz-outline: none;
+outline: none;
+}
+	img:not([draggable]), embed, object, video{
+	max-width: 100%;
+	height: auto;
+}
+a,
+a:active,
+a:focus,
+a:hover,
+a:visited {
+	text-decoration: none;
+	outline: 0;
+	color: #222222;
+}
+img {
+	border: none;
+	max-width: 100%;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+h1,h2,h3,h4,h5,h6,a,ul,li{
+	line-height: 1;
+}
+.clear-both:before, 
+.clear-both:after{
+	display: table;
+	content: "";
+	clear: both;
+}
+.section-padding {
+	padding: 150px 0;
+}
+.the-heart-introduction-section.section-padding {
+	padding: 150px 0 0 0;
+}
+
+.the-heart-memoragble-days-section.section-padding {
+	padding: 150px 0 0 0 ;
+}
+.the-heart-you-are-attending-section.section-padding {
+	padding: 70px 0 70px;
+}
+.the-heart-wedding-jurnal-section.section-padding {
+    padding: 65px 0 83px 0;
+}
+.the-heart-groomsman-section.section-padding {
+	padding: 150px 0 43px 0;
+}
+.the-heart-gift-registry-section.section-padding {
+    padding: 150px 0 83px 0;
+}
+.the-heart-single-blog-post-section.section-padding {
+	padding: 150px 0 120px 0;
+}
+.content-margin-top {
+	margin-top: 80px;
+}
+.the-heart-spilt-container {
+	width: 50%;
+	float: left;
+}
+.the-heart-welcome-tbl {
+	height: 600px;
+	width: 100%;
+}
+.the-heart-welcome-tbl-c {
+  left: 50%;
+  position: absolute;
+  top: calc(50% + 40px);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.the-heart-tbl {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+.the-heart-tbl-c {
+	left: 50%;
+	position: absolute;
+	top: 55%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+.the-heart-section-heading {
+	text-align: center;
+	position: relative;
+	z-index: 6;
+}
+.the-heart-section-heading h4 {
+	font-size: 1.333em;
+	margin: 0;
+	margin-bottom: 18px;
+}
+.the-heart-section-heading h2 {
+	margin: 0;
+	font-size: 2.667em;
+}
+.the-heart-btn.simple-btn {
+	color: #96327D;
+	font-weight: 400;
+	font-size: 1.333em;
+	position: relative;
+}
+.the-heart-btn.simple-btn:before {
+	position: absolute;
+	content: "\f178";
+	top: 50%;
+	right: -42px;
+	font-family: 'FontAwesome';
+	transform: translateY(-50%);
+}
+.the-heart-btn-holder  {
+	margin-top: 50px;
+}
+.the-heart-btn-holder {
+	position: relative;
+	text-align: center;
+}
+.the-heart-btn.pink-btn {
+	width: 220px;
+	height: 50px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	background-color: #96327d;
+	display: inline-block;
+	text-align: center;
+	line-height: 50px;
+	color: #FFFFFF;
+	font-size: 1em;
+	font-weight: 400;
+	transition: all .4s;
+}
+.the-heart-btn.pink-btn:hover {
+	color: #96327d;
+	background-color: #fff;
+}
+
+#prelaoder {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 999999999999;
+	background-color: #FCF5E4;
+	background-image: url(img/preloader.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/* Body Background List */
+body.the-heart-default-body {
+	background-image: url(img/the-heart-body-bg.png);
+}
+
+
+/* Graet Vides Fonts */
+h1,h2,h3,h4 {
+	font-family: 'Great Vibes', cursive;
+	font-weight: 700;
+}
+.the-heart-time ,
+.the-heart-time-txt,
+.the-heart-gift-registry-single-item figure figcaption a,
+.inner-footer .the-heart-footer-content h5 ,
+.the-heart-single-married-time p ,
+.the-heart-like-and-comment li ,
+.the-heart-social-list-2 li a ,
+.the-heart-social-list-2 li p {
+	font-family: 'Great Vibes', cursive;
+	font-weight: 700;
+}
+
+/*==============================================================
+			The Heart Start 
+=========================================================================================*/
+
+
+/* ===========================================================
+			2. The Heart Main Menu
+============================================================================= */
+
+.the-heart-menu-and-logo-section {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9;
+	box-shadow: 0 5px 10px rgba(0,0,0,.1);
+	background-color: rgba(255,255,255,.6);
+	transition: all 0.4s;
+}
+.the-heart-overly .the-heart-menu-and-logo-section{
+	background-color:rgba(255,255,255,1);
+}
+.the-heart-logo img {
+  	width: 70%;
+}
+.sticky-menu {
+   	box-shadow: 0 5px 10px rgba(0,0,0,.1);
+   	background-color: rgba(255,255,255,1);
+   	z-index:99;
+}
+.the-heart-logo {
+    padding: 20px 0;
+    transition: all 0.4s;
+}
+header.the-heart-menu-and-logo-section.sticky-menu .the-heart-logo {
+    padding: 10px 0;
+}
+header.the-heart-menu-and-logo-section.sticky-menu .the-heart-main-meun ul li a {
+    padding: 25px 0;
+}
+/*#coming-soon-bg-header .the-heart-menu-and-logo-section {
+  	background-color: #fff;
+}
+*/
+#coming-soon-bg-header .the-heart-welcome-section::before {
+  	background-color: #000;
+  	content: "";
+ 	height: 100%;
+  	left: 0;
+  	opacity: 0.6;
+  	position: absolute;
+  	top: 0;
+  	width: 100%;
+  	z-index: -1;
+}
+
+.the-heart-main-meun {
+	text-align: right;
+}
+.the-heart-main-meun ul li {
+	display: inline-block;
+	position: relative;
+}
+.the-heart-main-meun ul li a {
+	color: #96327d;
+	display: block;
+	font-size: 0.95em;
+	font-weight: 400;
+	margin: 0 11px;
+	padding: 35px 0;
+	text-transform: capitalize;
+	transition: all 0.4s ease 0s;
+}
+.the-heart-main-meun i {
+    font-size: 11px;
+	margin-left: 2px;
+    position: relative;
+}
+
+.the-heart-main-meun ul li:hover i{
+	
+}
+.the-heart-logo a {
+    display: inline-block;
+}
+.menu-toggle {
+  	display: none;
+}
+
+ul.dropdown {
+  background-color: #fff;
+  border-top: 3px solid #96327d;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+  left: 0;
+  opacity: 0;
+  padding:0;
+  position: absolute;
+  text-align: center;
+  top: 88px;
+  transform: rotateX(90deg);
+  transform-origin: center top 0;
+  transition: all 0.4s ease 0s;
+  visibility: hidden;
+  width: 185px;
+}
+
+ul.dropdown li {
+  border-bottom: 1px solid #ccc;
+  display: block;
+}
+ul.dropdown li a {
+  font-size: 0.838em;
+  margin: 0;
+  padding: 15px 10px;
+  text-align: left;
+  transition: all 0.4s ease 0s;
+}
+ul.dropdown li a:hover{
+	background-color: #96327D;
+	color: #fff;
+}
+ul.dropdown li:last-child{
+	border: none;
+}
+
+.the-heart-main-meun ul li:hover ul.dropdown{
+	transform: rotate(0);
+	visibility: visible;
+	opacity: 1;
+}
+
+header.the-heart-menu-and-logo-section.sticky-menu ul.dropdown{
+	top: 66px;
+}
+header.the-heart-menu-and-logo-section.sticky-menu ul.dropdown li a{
+	padding: 15px 10px;
+}
+
+header.the-heart-menu-and-logo-section .the-heart-main-meun ul li.menu-btn a.the-heart-btn {
+	padding: 0px 30px;
+	width: auto;
+	border-radius: 5px;
+	border: 1px solid transparent;
+}
+header.the-heart-menu-and-logo-section .the-heart-main-meun ul li.menu-btn a.the-heart-btn:hover {
+	background-color: transparent;
+	color: #96327d;
+	border: 1px solid #96327d;
+}
+
+/* ===========================================================
+			3. The Heart Welcome Section
+============================================================================= */
+
+.the-heart-welcome-section {
+	position: relative;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+	z-index: 2;
+	height: 600px;
+	width: 100%;
+}
+.the-heart-welcome-section::before {
+	background: #fff none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.6;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+.black-overly:before {
+  	background: #000;
+  	position: absolute;
+  	content: "";
+  	width: 100%;
+  	height: 100%;
+  	left: 0;
+  	opacity: .5;
+  	z-index: 1;
+}
+
+.the-heart-welcome-section.black-overly .the-heart-welcome-content {
+  	color: #fff;
+}
+.the-heart-slider:before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.7);
+	z-index: 1;
+}
+.the-heart-welcome-floral-bg {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.the-heart-slider .owl-prev {
+	border-radius: 50%;
+	font-size: 40px;
+	height: 350px;
+	line-height: 46px;
+	position: absolute;
+	left:0px;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 0.4s ease 0s;
+	width: 50px;
+	z-index: 3;
+	opacity: 0;
+}
+.slider-version:hover .the-heart-slider .owl-prev{
+	opacity: 1;
+	left: 50px;
+}
+
+.the-heart-slider .owl-next {
+  	border-radius: 50%;
+  	font-size: 40px;
+  	height: 350px;
+  	line-height: 46px;
+  	position: absolute;
+  	right:0px;
+  	top: 50%;
+  	transform: translateY(-50%);
+  	transition: all 0.4s ease 0s;
+  	width: 50px;
+  	z-index: 3;
+  	opacity: 0;
+}
+
+.slider-version:hover .the-heart-slider .owl-next{
+	opacity: 1;
+	right: 50px;
+}
+.the-heart-welcome-floral-bg:before ,
+.the-heart-welcome-floral-bg:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	height: 230px;
+	width: 100%;
+	background-image: url(img/floral-top.html);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	z-index: 3;
+}
+.the-heart-welcome-floral-bg:after {
+	top: inherit;
+	bottom: 0;
+	height: 249px;
+	background-image: url(img/floral-bottom.html);
+}
+.the-heart-welcome-content {
+	position: relative;
+	z-index: 10;
+	margin-bottom: 25px;
+}
+#coming-soon-bg-header .the-heart-welcome-content {
+  color: #fff;
+}
+.the-heart-welcome-content h1 {
+	font-size: 6.067em;
+	margin: 0;
+	margin-bottom: 11px;
+	font-weight: 700;
+}
+.the-heart-welcome-content h4 {
+	margin: 0;
+	font-size: 1.667em;
+	margin-bottom: 57px;
+	font-weight: 400;
+}
+.the-heart-floral-txt {
+	position: relative;
+    margin-bottom: 45px;
+    margin-top: 40px;
+}
+.the-heart-floral-txt:before ,
+.the-heart-floral-txt:after {
+	position: absolute;
+	content: "";
+	top: -30px;
+	left: 0;
+	height: 20px;
+	width: 100%;
+	background-image: url(img/floeal-txt-bg-1.html);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.the-heart-floral-txt:after {
+	background-image: url(img/floeal-txt-bg-2.html);
+	top: inherit;
+	bottom: -20px;
+}
+.the-heart-floral-txt h3 {
+	margin: 0;
+	font-size: 1.333em;
+	font-weight: 700;
+}
+
+.black-overly .the-heart-floral-txt h3{
+	color: #fff;
+}
+
+.the-heart-date-couuntdown {
+	position: absolute;
+	bottom: 25px;
+	left: 50%;
+	width: 66.66667%;
+	z-index: 9;
+	margin: 0 auto;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+}
+.the-heart-timer-single:last-child:before {
+	display: none;
+}
+.the-heart-timer-single:last-child {
+	margin: 0;
+	padding: 0;
+}
+.the-heart-timer {
+	float: left;
+	height: 120px;
+	width: 120px;
+	border-radius: 100%;
+	border: 1px dotted #96327D;
+	display: table;
+}
+.the-heart-timer-single {
+	display: inline-block;
+	position: relative;
+	margin: 0 50px 0 0;
+}
+.the-heart-timer-single:before {
+	position: absolute;
+	content: ":";
+	top: 50%;
+	left: 113%;
+	color: #96327D;
+	font-size: 4.000em;
+	line-height: 1;
+	vertical-align: middle;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	font-weight: 900;
+}
+.the-heart-welcome-section.black-overly #heart_countdown {
+	color: #FFFFFF;
+}
+.the-heart-welcome-section.black-overly .the-heart-timer {
+    border: 1px solid #ffffff;
+}
+.the-heart-welcome-section.black-overly .the-heart-timer-single:before {
+	color: #ffffff;
+}
+
+
+
+
+/*v9*/
+
+.effect-text {
+  font-size: 50px;
+  color: #edf2f4;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.single-text{
+	margin: 0;
+	font-size: 1.667em;
+	font-weight: 400;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+.version-9 .the-heart-floral-txt{
+	color: #fff;
+}
+.tiny-heart {
+  position: absolute;
+  opacity: 0;
+  background-color: #96327D;
+  box-shadow: 0px 0px 50px 4px rgba(150, 50, 125, 0.7);
+  animation: animated-heart infinite ease-in;
+}
+.tiny-heart:before, .tiny-heart:after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #96327D;
+}
+.tiny-heart:before {
+  transform: translateX(-50%);
+}
+.tiny-heart:after {
+  transform: translateY(-50%);
+}
+
+@keyframes animated-heart {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) rotate(45deg);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0, -40%) rotate(45deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, -1000%) rotate(45deg);
+  }
+}
+
+
+/*========================================================================= 
+			9. The Heart jurnal 
+========================================================================================================*/
+
+.the-heart-wedding-jurnal-footer {
+	margin-top: 20px;
+}
+.the-heart-single-journal figure img {
+	mask-image: url(img/journal-img-mask.png);
+	-webkit-mask-image: url(img/journal-img-mask.png);
+	mask-repeat: no-repeat;
+	-webkit-mask-repeat: no-repeat;
+	mask-position: center center;
+	-webkit-mask-position: center center;
+	mask-size: 100% 100%;
+	-webkit-mask-size: 100% 100%;
+	width: 100%;
+}
+
+.the-heart-single-journal figure {
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+.the-heart-single-journal figcaption {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50% , -50%);
+	width: 100%;
+	text-align: center;
+	z-index: 4;
+	opacity: 0;
+	transition: all .4s linear;
+}
+.the-heart-single-journal figcaption h4 {
+	color: #96327D;
+	font-size: 2.000em;
+	display: inline-block;
+	margin: 0;
+}
+.the-heart-single-journal {
+    margin-bottom: 50px;
+    min-height: 440px;
+}
+.the-heart-wedding-jurnal-footer h5 {
+	font-weight: 700;
+	text-transform: capitalize;
+	font-size: 1.333em;
+	margin: 0;
+	position: relative;
+	padding-bottom: 3px;
+	margin-bottom: 28px; 
+}
+.the-heart-wedding-jurnal-footer h5:before {
+	position: absolute;
+	content: "";
+	bottom: -14px;
+	left: 0;
+	width: 100%;
+	height: 13px;
+	background-image: url(img/journal-heading-bg.png);
+	background-repeat: no-repeat;
+	background-size: 50% 100%;
+	background-position: left center;
+}
+.the-heart-wedding-jurnal-footer h5 span {
+	font-size: 2em;
+	vertical-align: text-bottom;
+}
+.the-heart-wedding-jurnal-footer h6 {
+	font-size: 1.333em;
+	margin: 0;
+	font-weight: 700;
+	margin-bottom: 18px;
+	line-height: 1.3;
+}
+.the-heart-wedding-jurnal-footer p {
+	margin: 0;
+	font-weight: 400;
+	text-transform: capitalize;
+}
+.the-heart-single-journal figure:before {
+	position: absolute;
+	content: "";
+	top: 20px;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+	background-color: rgba(255,255,255,.8);
+	z-index: 4;
+	opacity: 0;
+	transition: all .4s linear;
+	transform: scale3d(1.4,1.4,1);
+	border: 1px solid #96327D;
+}
+.the-heart-single-journal figure:hover figcaption {
+	opacity: 1;
+	top: 50%;
+}
+.the-heart-single-journal figure:hover:before {
+	opacity: 1;
+	transform: scale3d(1,1,1);
+}
+#the-heart-journal-grid .the-heart-single-journal {
+	padding: 0 15px;
+	margin-bottom: 30px;
+}
+
+/*============================================================================== 
+		10. The Heart Footer 
+======================================================================================================*/
+
+.the-heart-footer-section {
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	padding: 300px 0;
+}
+/*.the-heart-footer-section > div {
+	height: 719px;
+}*/
+
+.the-heart-footer-content {
+	text-align: center;
+	position: relative;
+	z-index: 3;
+}
+.the-heart-footer-content h2 {
+	margin: 0;
+	font-size: 4.000em;
+	margin-bottom: 30px;
+	font-weight: 700;
+}
+.the-heart-footer-content h5 {
+	margin: 0;
+	font-size: 1em;
+	font-style: italic;
+	font-weight: 400;
+}
+.inner-footer .the-heart-footer-content h5 {
+	font-size: 1.333em;
+	font-weight: 700;
+}
+
+
+
+
+.the-heart-single-journal figure img {
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: 3;
+}
+.the-heart-single-journal figure {
+  height: 0;
+  padding-bottom: 51%;
+  position: relative;
+  background-color: transparent;
+  width: 100%;
+  display: block;
+}
+.marshall-rotating-plane {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    margin: 0 auto;
+    -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+    animation: rotateplane 1.2s infinite ease-in-out;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+    -webkit-transition: transform 0.3s;
+    transition: transform 0.3s;
+}
+.b-loaded .marshall-rotating-plane {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  visibility: hidden;
+}
+@-webkit-keyframes rotateplane {
+    0% {
+        -webkit-transform: perspective(120px)
+    }
+    50% {
+        -webkit-transform: perspective(120px) rotateY(180deg)
+    }
+    100% {
+        -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+    }
+}
+
+@keyframes rotateplane {
+    0% {
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+    }
+    50% {
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+    }
+    100% {
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg)
+    }
+}
+
+.b-lazy {
+  -webkit-transition: opacity 500ms ease-in-out;
+  -moz-transition: opacity 500ms ease-in-out;
+  -o-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
+  max-width: 100%;
+  opacity: 0;
+}
+.b-lazy.b-loaded {
+  opacity: 1;
+}
